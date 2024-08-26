@@ -1,8 +1,10 @@
 <template>
-  <h1>Bienvenue</h1>
+  <RouterView />
 </template>
 
 <script>
+
+
 </script>
 
 <style>
