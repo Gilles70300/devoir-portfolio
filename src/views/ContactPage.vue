@@ -1,14 +1,15 @@
 <template>
-    <HeaderComponent />
-
     <h1>Contact</h1>
-    <ContactForm />
-    
-    <FooterComponent />
+    <contactform />
 </template>
 
-<script setup>
-import HeaderComponent from '@/components/HeaderComponent.vue';
-import FooterComponent from '@/components/FooterComponent.vue';
+<script>
 import ContactForm from '@/components/ContactForm.vue';
+
+export default {
+    name: "ContactPage",
+    components: {
+        'contactform': ContactForm,
+    }
+};
 </script>

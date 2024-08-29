@@ -1,11 +1,12 @@
 <template>
-    <HeaderComponent />
-
     <h1>Mes créations</h1>
 
     <div>
         <h2>Mon curriculum vitae</h2>
-        <img src="../assets/creations/projet-cv.jpg" alt="Photo de mon projet de CV">
+        <img src="../assets/creations/cv/projet-cv.jpg" alt="Photo de mon projet de CV">
+        
+        <modalecv v-bind:revele="revele" v-bind:toggleModale="toggleModale" />
+        <div v-on:click="toggleModale" class="btn btn-success">Plus d'infos sur ce projet</div>
     </div>
 
     <div>
@@ -15,13 +16,27 @@
 
     <div>
         <h2>Dynamisme d'un espace commentaire</h2>
-        <img src="../assets/creations/Dynamisme espace commentaire.jpg" alt="Photo de mon projet de dynamisme d'un espace commentaire">
+        <img src="../assets/creations/espace commentaire/Dynamisme espace commentaire.jpg" alt="Photo de mon projet de dynamisme d'un espace commentaire">
     </div>
-
-    <FooterComponent />
 </template>
 
-<script setup>
-import HeaderComponent from '@/components/HeaderComponent.vue';
-import FooterComponent from '@/components/FooterComponent.vue';
+<script>
+    import ModaleCV from '@/components/ModaleCV.vue';
+
+    export default {
+        name: "PortofolioPage",
+        data() {
+            return {
+                revele: false
+            }
+        },
+        components: {
+            'modalecv' : ModaleCV
+        },
+        methods: {
+            toggleModale: function (){
+                this.revele = !this.revele
+            }
+        }
+    }
 </script>

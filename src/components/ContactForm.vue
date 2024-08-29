@@ -23,6 +23,7 @@ const TEMPLATE_ID = 'template_t1gh4cy';
 const USER_ID = 'fVkHkJBuHIuONsD1T';
 
 export default {
+  name: "ContactForm",
   data() {
     return {
       name: '',  
