@@ -4,7 +4,7 @@
     </RouterLink>
 
     <RouterLink to="/">
-        <p>Page d'acceuil</p>
+        <p>Page d'accueil</p>
     </RouterLink>
 
     <RouterLink to="/creations">

@@ -5,7 +5,7 @@
 
         <div class="modale card">
             <div class="btn-modale btn btn-danger" v-on:click="toggleModale">X</div>
-            <h2>Le contenu de la modale CV</h2>
+            <h2>Le contenu de la modale Commentaire</h2>
         </div>
 
     </div>
@@ -13,7 +13,7 @@
 
 <script>
 export default {
-    name: "ModaleCV",
+    name: "ModaleCommentaire",
     props: ['revele', 'toggleModale']
 }
 </script>
