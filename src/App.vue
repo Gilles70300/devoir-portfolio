@@ -1,7 +1,7 @@
 <template>
-    <headercomponent />
+    <headerComponent />
     <RouterView />
-    <footercomponent />
+    <footerComponent />
 </template>
 
 <script>
@@ -11,8 +11,18 @@ import FooterComponent from '@/components/FooterComponent.vue';
 export default {
   name: "App",
   components: {
-    'headercomponent': HeaderComponent,
-    'footercomponent': FooterComponent,
+    'headerComponent': HeaderComponent,
+    'footerComponent': FooterComponent,
   }
 };
 </script>
+
+<style>
+  #app {
+    background-image: url(../src/assets/photos/Flag_of_Belgium_\(civil\).jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position:left top;
+    background-size: cover;
+  }
+</style>

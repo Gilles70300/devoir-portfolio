@@ -60,7 +60,7 @@ export default {
   margin:auto;
   text-align: center;
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #FDDA24;
   padding: 20px;
   width: 50%;
 }
