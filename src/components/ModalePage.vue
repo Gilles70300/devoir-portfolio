@@ -13,7 +13,7 @@
 
 <script>
 export default {
-    name: "ModaleCV",
+    name: "ModalePage",
     props: ['revele', 'toggleModale']
 }
 </script>

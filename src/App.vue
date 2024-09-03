@@ -1,28 +1,26 @@
 <template>
     <headerComponent />
-    <RouterView />
+    <homePage />
+    <portfolioPage />
+    <contactPage />
     <footerComponent />
 </template>
 
 <script>
 import HeaderComponent from '@/components/HeaderComponent.vue';
+import HomePage from './components/HomePage.vue';
+import PortfolioPage from './components/PortfolioPage.vue';
+import ContactPage from './components/ContactPage.vue';
 import FooterComponent from '@/components/FooterComponent.vue';
 
 export default {
   name: "App",
   components: {
     'headerComponent': HeaderComponent,
+    'homePage': HomePage,
+    'portfolioPage': PortfolioPage,
+    'contactPage': ContactPage,
     'footerComponent': FooterComponent,
   }
 };
 </script>
-
-<style>
-  #app {
-    background-image: url(../src/assets/photos/Flag_of_Belgium_\(civil\).jpg);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position:left top;
-    background-size: cover;
-  }
-</style>

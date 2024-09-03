@@ -1,10 +1,10 @@
 import { createRouter } from "vue-router"
 import { createWebHistory } from "vue-router"
 
-import HomePage from "@/views/HomePage.vue"
-import PortfolioPage from "@/views/PortfolioPage.vue"
-import ContactPage from "@/views/ContactPage.vue"
-import NotFound from "@/views/NotFound.vue"
+import NotFound from "@/components/NotFound.vue"
+import HomePage from "@/components/HomePage.vue"
+import PortfolioPage from "@/components/PortfolioPage.vue"
+import ContactPage from "@/components/ContactPage.vue"
 
 const routes = [
     {
@@ -13,8 +13,8 @@ const routes = [
         component: HomePage
     },
     {
-        path: '/creations',
-        name: "Créations",
+        path: '/creation',
+        name: "Creation",
         component: PortfolioPage
     },
     {
@@ -30,7 +30,16 @@ const routes = [
 
 const router = createRouter({
     history: createWebHistory(),
-    routes
-})
+    routes,
+    scrollBehavior(to, from, savedPosition) {
+        if (savedPosition) {
+          return savedPosition;
+        }
+        if (to.hash) {
+          return { el: to.hash };
+        }
+        return { x: 0, y: 0 };
+      }
+});
 
 export default router
