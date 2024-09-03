@@ -15,7 +15,3 @@
         name: "HomePage"
     }
 </script>
-
-<style scoped>
-
-</style>

@@ -42,9 +42,3 @@
         }
     }
 </script>
-
-<style scoped>
-    img {
-        height: 700px;
-    }
-</style>

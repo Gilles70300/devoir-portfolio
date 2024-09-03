@@ -13,7 +13,3 @@
         name: "FooterComponent"
     } 
 </script>
-
-<style scoped>
-
-</style>

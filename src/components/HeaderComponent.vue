@@ -17,9 +17,3 @@
     name: "HeaderComponent"
     }
 </script>
-
-<style scoped>
-
-
-
-</style>
