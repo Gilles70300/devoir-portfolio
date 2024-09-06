@@ -32,6 +32,9 @@ importers:
       vue-router:
         specifier: '4'
         version: 4.4.3(vue@3.4.38)
+      vue3-pdf-app:
+        specifier: ^1.0.3
+        version: 1.0.3(vue@3.4.38)
     devDependencies:
       '@babel/core':
         specifier: ^7.12.16
@@ -3692,6 +3695,11 @@ packages:
 
   vue-template-es2015-compiler@1.9.1:
     resolution: {integrity: sha512-4gDntzrifFnCEvyoO8PqyJDmguXgVPxKiIxrBKjIowvL9l+N66196+72XVYR8BBf1Uv1Fgt3bGevJ+sEmxfZzw==}
+
+  vue3-pdf-app@1.0.3:
+    resolution: {integrity: sha512-qegWTIF4wYKiocZ3KreB70wRXhqSdXWbdERDyyKzT7d5PbjKbS9tD6vaKkCqh3PzTM84NyKPYrQ3iuwJb60YPQ==}
+    peerDependencies:
+      vue: ^3.0.0
 
   vue@3.4.38:
     resolution: {integrity: sha512-f0ZgN+mZ5KFgVv9wz0f4OgVKukoXtS3nwET4c2vLBGQR50aI8G0cqbFtLlX9Yiyg3LFGBitruPHt2PxwTduJEw==}
@@ -7916,6 +7924,10 @@ snapshots:
       loader-utils: 1.4.2
 
   vue-template-es2015-compiler@1.9.1: {}
+
+  vue3-pdf-app@1.0.3(vue@3.4.38):
+    dependencies:
+      vue: 3.4.38
 
   vue@3.4.38:
     dependencies:

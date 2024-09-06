@@ -1,20 +1,23 @@
 <template>
-  <h1 id="contact">Contact</h1>
+  <div id="contact">
+    <h1>Contact</h1>
 
-  <div class="container">
-      <form @submit.prevent="sendEmail">
-        <label for="name">Nom / prénom</label>
-        <input type="text" id="name" v-model="name" required>
-    
-        <label for="object">Objet</label>
-        <input type="text" id="object" v-model="object" required>
-    
-        <label for="message">Message</label>
-        <textarea id="message" v-model="message" required></textarea>
-    
-        <input type="submit" value="Send">
-      </form>
+    <div class="container">
+        <form @submit.prevent="sendEmail">
+          <label for="name">Nom / prénom</label>
+          <input type="text" id="name" v-model="name" required>
+      
+          <label for="object">Objet</label>
+          <input type="text" id="object" v-model="object" required>
+      
+          <label for="message">Message</label>
+          <textarea id="message" v-model="message" required></textarea>
+      
+          <input type="submit" value="Send">
+        </form>
     </div>
+  </div>
+
 </template>
 
 <script>

@@ -21,9 +21,8 @@
             <div class="btn-modale btn btn-danger" v-on:click="toggleModale2">X</div>
             <h2>Cahier des charges</h2>
             <p>Date de création: 08 juillet 2024</p>
-            <a href="../assets/creations/cahier des charges/Cahier des charges La Socketterie.pdf" download target="blank">Pour voir le cahier des charges, cliquez ici!</a>
+            <a href="@/assets/creations/cahier des charges/Cahier des charges La Socketterie.pdf" target="blank">Ouvrir le pdf</a>
         </div>
-
     </div>
 
     <div class="bloc-modale" v-if="revele3">
@@ -51,6 +50,6 @@ export default {
         'toggleModale1', 
         'toggleModale2',
         'toggleModale3'
-    ]
+    ],
 }
 </script>
