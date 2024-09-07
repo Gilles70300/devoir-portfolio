@@ -3,24 +3,12 @@ import { createWebHistory } from "vue-router"
 
 import NotFound from "@/components/NotFound.vue"
 import HomePage from "@/components/HomePage.vue"
-import PortfolioPage from "@/components/PortfolioPage.vue"
-import ContactPage from "@/components/ContactPage.vue"
 
 const routes = [
     {
         path: '/',
         name: "Home",
         component: HomePage
-    },
-    {
-        path: '/creation',
-        name: "Creation",
-        component: PortfolioPage
-    },
-    {
-        path: '/contact',
-        name: "Contact",
-        component: ContactPage
     },
     {
         path: '/:notFound',

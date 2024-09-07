@@ -4,7 +4,7 @@
 
     <div class="container">
         <form @submit.prevent="sendEmail">
-          <label for="name">Nom / prénom</label>
+          <label for="name">Nom / Prénom</label>
           <input type="text" id="name" v-model="name" required>
       
           <label for="object">Objet</label>

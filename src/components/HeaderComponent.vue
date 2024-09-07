@@ -6,9 +6,9 @@
         
             <router-link to="/#presentation">Ma présentation</router-link>
     
-            <router-link to="/creation#creation">Mes créations</router-link>
+            <router-link to="/#creation">Mes créations</router-link>
         
-            <router-link to="/contact#contact">Contact</router-link>
+            <router-link to="/#contact">Contact</router-link>
         </nav>
 </template>
 
