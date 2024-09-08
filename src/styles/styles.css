@@ -6,19 +6,27 @@
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   text-decoration: underline;
   color: rgb(239,51,64);
+  text-align: center;
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-decoration: underline;
   color: rgb(239,51,64);
 }
 
 h3 {
+  font-size: 1.5rem;
+  text-decoration: underline;
+  color: rgb(239,51,64);
+}
+
+h4 {
+  font-size: 1rem;
   color: rgb(239,51,64);
 }
 

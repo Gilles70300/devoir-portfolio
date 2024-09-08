@@ -1,6 +1,8 @@
 <template>
     <div id="presentation">
-        <h1>Ma présentation</h1>
+        <h1>Portfolio de Gilles Winand</h1>
+        
+        <h2>Ma présentation</h2>
         <p> 
             Je m'appelle Gilles Winand, j'ai 33 ans et j'habite Breuches en Haute-Saône. 
             Je suis passionné d'informatique depuis mon adolescence et l'achat de mon premier pc. 

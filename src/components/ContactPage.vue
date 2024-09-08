@@ -1,8 +1,10 @@
 <template>
   <div id="contact">
-    <h1>Contact</h1>
+    
+    <h2>Contact</h2>
 
     <div class="container">
+
         <form @submit.prevent="sendEmail">
           <label for="name">Nom / Prénom</label>
           <input type="text" id="name" v-model="name" required>
@@ -15,6 +17,7 @@
       
           <input type="submit" value="Send">
         </form>
+
     </div>
   </div>
 
