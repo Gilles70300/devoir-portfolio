@@ -62,7 +62,7 @@ nav a:hover {
     padding-bottom: 25px;
 }
 
-h1+p {
+h2+p {
   text-indent: 50px;
 }
 
@@ -85,6 +85,7 @@ h1+p {
 
 #homework:hover {
   box-shadow: 10px 10px 5px rgb(239,51,64);
+  cursor: pointer;
 }
 
 /* modale */
