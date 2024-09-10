@@ -188,6 +188,8 @@ input[type=submit]:hover {
 .footer img {
   height: 25px;
   width: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
 /* 404 page */

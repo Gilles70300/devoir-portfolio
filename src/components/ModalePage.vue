@@ -21,7 +21,7 @@
                 Ce projet a été réalisé dans le cadre de formation. 
                 Il a été réalisé en faisant beaucoup de recherches sur internet pour se renseigner sur la concurrence, sur les besoins du client, sur le marché actuel dans le secteur de la société, etc..
             </p>
-            <a href="@/assets/creations/cahier des charges/Cahier des charges La Socketterie.pdf" target="blank">Ouvrir le pdf</a>
+            <a :href="`${publicPath}Cahier des charges La Socketterie.pdf`" download="download">Télécharger le cahier des charges</a>
         </div>
     </div>
 
@@ -61,5 +61,10 @@ export default {
         'toggleModale2',
         'toggleModale3'
     ],
+    data () {
+        return {
+            publicPath: process.env.BASE_URL
+        }
+    }
 }
 </script>
